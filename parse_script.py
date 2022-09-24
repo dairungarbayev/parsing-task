@@ -32,11 +32,7 @@ for num in range(1,14):
 
     for phone in smartphones:
         name = phone.find('div',class_='bx_catalog_item_title').a.h4.text
-        articul = phone.find('div',class_='bx_catalog_item_XML_articul').text.strip()
-        
-        #old_price = phone.find('span',class_='old_price').text.replace(' ','')[:-1]
-        #you_save = "".join(list(filter( lambda x: x in '0123456789', phone.find('div',class_='you_save').text)))
-        #price = int(old_price)-int(you_save)
+        articul = phone.find('div',class_='bx_catalog_item_XML_articul').text.strip()[9:]
 
         price_div = phone.find('div',class_='bx-more-prices')
         if price_div is not None:

@@ -9,6 +9,11 @@ The API is implemented using FastAPI.
 <br>
 The Docker image is created using the [official guide](https://fastapi.tiangolo.com/deployment/docker/).
 
+### Running FastAPI app locally ###
+<img src="screenshots/run_local.jpg"  />
+
+### Screenshots below show a mistake in articul field. This mistake was corrected. ###
+
 ### Creating Docker image and container ###
 <img src="screenshots/creating_docker_image.jpg"  />
 <img src="screenshots/docker_images.jpg"  />
